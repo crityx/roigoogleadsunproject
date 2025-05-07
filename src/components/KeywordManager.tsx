@@ -107,7 +107,7 @@ const KeywordManager: React.FC = () => {
   return (
     <div className="card">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-semibold">Mots-clés</h2>
+        <h2 className="text-xl font-semibold">Selectionner un mot-clé</h2>
         <button
           onClick={() => setIsAdding(!isAdding)}
           className="btn btn-secondary text-sm flex items-center"
