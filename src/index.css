@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-800 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-400;
+  }
+  
+  .input-slider {
+    @apply w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer;
+  }
+  
+  .input-slider::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 rounded-full bg-blue-600 cursor-pointer;
+  }
+  
+  .funnel-step {
+    @apply relative flex flex-col items-center p-4 transition-all duration-300;
+  }
+  
+  .funnel-connector {
+    @apply h-12 w-1 bg-gray-300;
+  }
+  
+  .funnel-step-active {
+    @apply text-blue-600;
+  }
+  
+  .funnel-step-active .funnel-connector {
+    @apply bg-blue-600;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.slider-container {
+  @apply mb-4 mt-1;
+}
+
+.slider-container input[type="range"] {
+  @apply input-slider;
+}
+
+.slider-label {
+  @apply flex justify-between items-center text-sm text-gray-600 mt-1;
+}
