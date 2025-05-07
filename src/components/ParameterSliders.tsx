@@ -114,7 +114,7 @@ const ParameterSliders: React.FC = () => {
 
         <div>
           <div className="flex items-center justify-between mb-1">
-            <label className="text-sm font-medium">Taux de conversion site</label>
+            <label className="text-sm font-medium">Taux de conversion site (rdv calendly)</label>
             <div className="flex items-center bg-orange-100 rounded-full px-2 py-1">
               <input
                 type="number"
