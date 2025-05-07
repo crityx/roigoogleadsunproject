@@ -54,7 +54,7 @@ const ParameterSliders: React.FC = () => {
 
         <div>
           <div className="flex items-center justify-between mb-1">
-            <label className="text-sm font-medium">Budget mensuel</label>
+            <label className="text-sm font-medium">Budget ads</label>
             <div className="flex items-center bg-blue-100 rounded-full px-2 py-1">
               <DollarSign size={14} className="text-blue-700" />
               <input
