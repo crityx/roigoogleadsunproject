@@ -33,7 +33,7 @@ const ParameterSliders: React.FC = () => {
                 className="w-24 bg-transparent text-indigo-700 text-sm font-medium text-right focus:outline-none"
                 step="0.01"
                 min="1000"
-                max="10000"
+                max="25000"
               />
               <span className="text-indigo-700 text-sm font-medium ml-1">€</span>
             </div>
