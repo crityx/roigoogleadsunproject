@@ -42,7 +42,7 @@ const ParameterSliders: React.FC = () => {
             <input
               type="range"
               min="1000"
-              max="10000"
+              max="250000"
               step="0.01"
               value={selectedProduct?.price || 0}
               onChange={(e) => updateSelectedProductPrice(Number(e.target.value))}
@@ -64,7 +64,7 @@ const ParameterSliders: React.FC = () => {
                 className="w-24 bg-transparent text-blue-700 text-sm font-medium text-right focus:outline-none"
                 step="0.01"
                 min="1000"
-                max="20000"
+                max="25000"
               />
               <span className="text-blue-700 text-sm font-medium ml-1">€</span>
             </div>
@@ -73,7 +73,7 @@ const ParameterSliders: React.FC = () => {
             <input
               type="range"
               min="1000"
-              max="20000"
+              max="25000"
               step="0.01"
               value={campaignState.budget}
               onChange={(e) => updateBudget(Number(e.target.value))}
